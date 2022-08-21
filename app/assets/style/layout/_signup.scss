@@ -1,0 +1,54 @@
+.container-signUp {
+    @media (min-width:768px) {
+        max-width: 1200px;
+        display: flex;
+        justify-content: end;
+        margin: 0 auto;
+    }
+    & .signUp-list {
+        width: 100%;
+        @media (min-width:768px) {
+            position: relative;
+            width: 856px;
+        }
+    }
+    & .signUp-item {
+        @media (min-width:768px) {
+            position: absolute;
+            width: 416px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -344px;
+        }
+        & .arrow {
+            @media (max-width:767px) {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    border-width: 12px 12px;
+                    border-color: transparent;
+                    border-style: solid;
+                    border-top-color: $primary;
+                    bottom: -24px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            @media (min-width:768px) {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    border-width: 12px 12px;
+                    border-color: transparent;
+                    border-style: solid;
+                    border-left-color: $primary;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -24px;
+                }
+            }
+        }
+    }
+}

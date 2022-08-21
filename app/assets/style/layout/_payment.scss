@@ -1,0 +1,6 @@
+.bg-payment {
+    height: calc(100vh - 247px);
+    @media (max-width:767px) {
+        height: calc(100vh - 208px);
+    }
+}

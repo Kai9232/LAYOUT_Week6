@@ -1,0 +1,99 @@
+// 尺寸
+.w-md {
+  &-18 {
+    width: 18%;
+  }
+  &-74 {
+    width: 74%;
+  }
+  &-78 {
+    width: 78%;
+  }
+}
+.w-full {
+  @media (max-width:767px) {
+    width: 100%!important;
+  }
+}
+.photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.icon {
+  &-16 {
+    font-size: 16px;
+    top: 8px;
+    left: 8px;
+  }
+  &-32 {
+    font-size: 32px;
+  }
+  &-48 {
+    font-size: 48px;
+  }
+  &-50 {
+    font-size: 50px;
+  }
+  &-100 {
+    font-size: 100px;
+  }
+}
+// 文字設定
+.text-ff {
+  font-family: 'Noto Sans TC';
+}
+.fs {
+  &-sm {
+    font-size: $font-size-base * .75;
+  }
+  &-lg {
+    font-size: $font-size-base * 2;
+  }
+}
+.lh {
+  &-21 {
+    line-height: 21px;
+  }
+  &-24 {
+    line-height: 24px;
+  }
+  &-26 {
+    line-height: 26px;
+  }
+  &-29 {
+    line-height: 29px;
+  }
+  &-35 {
+    line-height: 35px;
+  }
+  &-37 {
+    line-height: 37px;
+  }
+  &-40 {
+    line-height: 40px;
+  }
+  &-70 {
+    line-height: 70px;
+  }
+}
+// 透明度設定
+.opacity-50 {
+  opacity: 50%;
+}
+// 邊框設定
+.border-white-50 {
+  color: $white;
+  opacity: .5;
+}
+.rounded {
+  &-4 {
+    border-radius: 4px;
+  }
+  &-8 {
+    border-radius: 8px;
+  }
+  &-24 {
+    border-radius: 24px;
+  }
+}

@@ -1,0 +1,30 @@
+.btn-gradient {
+  background-image: linear-gradient(104deg, #09ACF5, $secondary);
+  border: none;
+}
+.btn-gradient:hover {
+  background-image: linear-gradient(104deg, #2eb8f7, #7ae06e);
+}
+.btn-outline-white:hover {
+  background-color: rgba(255,255,255,0);
+  color: $secondary;
+  border-color: $secondary;
+}
+.btn-close {
+  background: url("/assets/images/close_white_24dp.svg");
+  position: absolute;
+  top: 30px;
+  right: 24px;
+  @media (max-width:767px) {
+    top: 16px;
+  }
+}
+.btn-progress {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 10px;
+  text-align: center;
+  vertical-align: middle;
+}

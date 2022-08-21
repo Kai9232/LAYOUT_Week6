@@ -16502,7 +16502,7 @@ ul {
 
 .navbar-brand {
   display: block;
-  background: url("/assets/images/logo.svg") no-repeat;
+  background: url("../images/logo.svg") no-repeat;
   background-size: 175px 42px;
   width: 175px;
   height: 42px;
@@ -16514,7 +16514,7 @@ ul {
 
 @media (max-width: 767px) {
   .navbar-brand {
-    background: url("/assets/images/logo-sm.svg") no-repeat;
+    background: url("../images/logo-sm.svg") no-repeat;
     width: 24px;
     height: 24px;
   }
@@ -16602,7 +16602,7 @@ ul {
 
 .bg-home {
   height: calc(100vh - 90px);
-  background: url("/assets/images/bg_home.jpg") no-repeat;
+  background: url("../images/bg_home.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -16815,7 +16815,7 @@ ul {
 }
 
 .bg-feedback {
-  background: url("/assets/images/bg_share.jpg") no-repeat;
+  background: url("../images/bg_share.jpg") no-repeat;
   background-color: #000;
   background-size: contain;
   background-position: top center;

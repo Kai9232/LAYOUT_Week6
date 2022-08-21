@@ -4,7 +4,7 @@
 }
 .navbar-brand {
   display: block;
-  background: url("/assets/images/logo.svg") no-repeat;
+  background: url("../images/logo.svg") no-repeat;
   background-size: 175px 42px;
   width: 175px;
   height: 42px;
@@ -13,7 +13,7 @@
   white-space: nowrap;
   margin-right: 0;
   @media (max-width:767px) {
-    background: url("/assets/images/logo-sm.svg") no-repeat;
+    background: url("../images/logo-sm.svg") no-repeat;
     width: 24px;
     height: 24px;
   }

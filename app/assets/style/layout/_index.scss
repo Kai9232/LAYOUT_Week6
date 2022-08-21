@@ -1,6 +1,6 @@
 .bg-home {
   height: calc(100vh - 90px);
-  background: url("/assets/images/bg_home.jpg") no-repeat;
+  background: url("../images/bg_home.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
   @media (max-width:767px) {
@@ -166,7 +166,7 @@
 }
 // 帶入每日作業的code，需要再多做訓練
 .bg-feedback {
-  background: url("/assets/images/bg_share.jpg") no-repeat;
+  background: url("../images/bg_share.jpg") no-repeat;
   background-color: #000;
   background-size: contain;
   background-position: top center;

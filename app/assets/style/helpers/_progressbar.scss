@@ -64,6 +64,27 @@
     background-color: $white;
   }
 }
+.timeline-middle {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+    right: 50%;
+    height: 2px;
+    background-color: $secondary;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    right: 0;
+    height: 2px;
+    background-color: $white;
+  }
+}
 .timeline-secondary {
   position: relative;
   &::after {

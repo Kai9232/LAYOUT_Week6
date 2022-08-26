@@ -30,7 +30,7 @@
   --bs-dark: #1C1C1C;
   --bs-black: #000;
   --bs-white: #fff;
-  --bs-font-sans-serif: "Azeret Mono", "Noto Sans TC", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Noto Sans TC", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
@@ -9995,6 +9995,10 @@ fieldset:disabled .btn {
   font-size: 1rem !important;
 }
 
+.fs-7 {
+  font-size: 0.875rem !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -16341,6 +16345,30 @@ ul {
   background-color: #fff;
 }
 
+.timeline-middle {
+  position: relative;
+}
+
+.timeline-middle::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  right: 50%;
+  height: 2px;
+  background-color: #62DB54;
+}
+
+.timeline-middle::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 50%;
+  right: 0;
+  height: 2px;
+  background-color: #fff;
+}
+
 .timeline-secondary {
   position: relative;
 }
@@ -16430,8 +16458,8 @@ ul {
   font-size: 100px;
 }
 
-.text-ff {
-  font-family: 'Noto Sans TC';
+.font-mono {
+  font-family: "Azeret Mono";
 }
 
 .fs-sm {
@@ -16571,6 +16599,7 @@ ul {
 .footer-text {
   font-size: 16px;
   line-height: 19px;
+  font-family: "Azeret Mono";
   color: #909090;
   text-align: center;
   padding: 24px 0;
@@ -16629,7 +16658,9 @@ ul {
 }
 
 .service {
-  border: 1px solid #2D2D2D;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   border-radius: 12px;
 }
 
@@ -16684,14 +16715,27 @@ ul {
   overflow: hidden;
 }
 
+.card {
+  background-color: transparent;
+}
+
 .course {
-  border: 1px solid #2D2D2D;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
   border-radius: 24px;
 }
 
 .course:hover {
-  border: 1px solid #62DB54;
+  border: 2px solid #62DB54;
   border-radius: 24px;
+}
+
+.course-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .advantage {
@@ -16770,7 +16814,9 @@ ul {
 }
 
 .article {
-  border: 1px solid #1C1C1C;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   border-radius: 10px;
 }
 
@@ -17075,7 +17121,7 @@ ul {
 }
 
 .bg-payment {
-  height: calc(100vh - 247px);
+  min-height: calc(100vh - 247px);
 }
 
 @media (max-width: 767px) {

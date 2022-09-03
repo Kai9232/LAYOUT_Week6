@@ -67,6 +67,11 @@
   &-35 {
     line-height: 35px;
   }
+  &-md-35 {
+    @media (max-width:767px) {
+      line-height: 35px;
+    }
+  }
   &-37 {
     line-height: 37px;
   }
@@ -74,7 +79,9 @@
     line-height: 40px;
   }
   &-70 {
-    line-height: 70px;
+    @media (min-width:768px) {
+      line-height: 70px;
+    }
   }
 }
 // 透明度設定
